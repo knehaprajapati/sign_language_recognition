@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HAR Project</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+            padding-top: 35px;
+            background-image: url('/static/photo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        nav {
+            background: #0d1933;
+            position: absolute;
+            width: 97%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav h1 {
+            color: #fff;
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 100%;
+            height: 4px;
+            background-color: rgb(23, 48, 80);
+        }
+
+        
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+            color: aliceblue;
+        }
+        .container p {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: rgb(130, 130, 95);
+        }
+
+        .container1 p {
+            font-size: 50px;
+            color: rgb(130, 130, 95);
+        }
+
+        canvas {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        #start-button {
+            padding: 5px 20px;
+            margin-top: 0.5px;
+            font-size: 16px;
+            background-color: #112438;
+            color: white;
+            
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #start-button:hover {
+            background-color: #19a0b4;
+        }
+
+        section {
+            padding-top: 5px;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: rgb(20, 57, 66);
+        }
+
+        section p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .contact-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 30px;
+            text-align: left;
+        }
+
+        
+
+        footer {
+            text-align: center;
+            background: #0d1933;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        footer ul li a {
+            color: #1bbddd;
+            text-decoration: none;
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        #project {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 40px 20px;
+        }
+
+        #project .text {
+            width: 100%;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        #project .text p {
+            font-size: 20px;
+            color: rgb(20, 57, 66);
+        }
+
+        
+
+        .scroll-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: transparent;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            #project {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #project .text {
+                width: 100%;
+                text-align: center;
+            }
+
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h1>HUMAN ACTIVITY RECOGNITION</h1>
+        
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <button id="start-button">Start Webcam</button>
+            <br><br>
+            <img id="webcam-feed" src="" width="640" height="425" style="display: none; border: 4px solid #112438; border-radius: 12px;">
+
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="text">
+            <h2>MINOR PROJECT</h2>
+            <p>
+                The primary goal of your project is to develop a real-time system that accurately recognizes sign language gestures 
+                using standard devices like webcams or smartphone cameras. This system aims to facilitate seamless communication 
+                between individuals who use sign language and those who do not, without the need for specialized hardware.
+                <b>Healthcare</b>: Facilitate communication between medical professionals and patients who use sign language, improving the quality of care and patient experience.<br>
+
+                <b>Customer Service</b>: Enhance interactions in retail, hospitality, and other service industries by enabling staff to understand and respond to sign language in real time.<br>
+
+                <b>Public Services</b>: Improve accessibility in government offices, transportation systems, and public events by providing real-time sign language translation.<br>
+
+                <b>Personal Communication</b>: Empower individuals to communicate more effectively with friends, family, and colleagues who may not understand sign language.
+            </p>
+        </div>
+    </section>
+    
+
+    <footer>
+        <h2>CONTACT US</h2>
+        <p>If you have any questions or want to get in touch, feel free to contact us:</p>
+
+        <ul class="contact-list">
+            <li>
+                <strong>Aksha Teli</strong><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/aksha-teli-a85869331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Aksha Teli</a><br>
+                Email: <a href="mailto:akshateli83@gmail.com">akshateli83@gmail.com</a>
+            </li>
+            <li>
+                <strong>Krish Namdev</strong><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/krish-namdev-66a294257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Krish Namdev</a><br>
+                Email: <a href="mailto:krishnamdev610@gmail.com">krishnamdev610@gmail.com</a>
+            </li>
+            <li>
+                <strong>Neha Prajapati</strong><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/neha-prajapati-66498b252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Neha Prajapati</a><br>
+                Email: <a href="mailto:nehaprajapati140@gmail.com">nehaprajapati140@gmail.com</a>
+            </li>
+            <li>
+                <strong>Sonu Jain</strong><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/sonu-jain-459194252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Sonu Jain</a><br>
+                Email: <a href="mailto:s7777162@gmail.com">s7777162@gmail.com</a>
+            </li>
+        </ul>
+        <p>Human Activity Recognition Project Made By Aksha, Krish, Neha, and Sonu.</p>
+        <button id="scrollToTopBtn" class="scroll-btn">&#8593;</button>
+    </footer>
+    
+    
+        <script>
+            const startButton = document.getElementById('start-button');
+            const webcamImg = document.getElementById('webcam-feed');
+            let isStreaming = false;
+        
+            startButton.addEventListener('click', () => {
+                if (!isStreaming) {
+                     webcamImg.src = "/video_feed?" + new Date().getTime();
+
+;
+                    webcamImg.style.display = "block";
+                    startButton.textContent = "Stop Webcam";
+                    isStreaming = true;
+                } else {
+                    webcamImg.src = "";
+                    webcamImg.style.display = "none";
+                    startButton.textContent = "Start Webcam";
+                    isStreaming = false;
+                }
+            });
+        
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            window.onscroll = function () {
+                scrollToTopBtn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+                    ? "block" : "none";
+            };
+        
+            scrollToTopBtn.onclick = function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
+        </script>
+        
+        
+        
+        
+   
+    
+</body>
+
+</html>
+
+
+
+
+
